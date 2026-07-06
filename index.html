@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salahaddin Ebrahimipour | Archaeologist</title>
+    <!-- Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for crisp, modern icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="text-stone-800 font-sans antialiased selection:bg-amber-700 selection:text-white min-h-screen flex items-center justify-center p-4 sm:p-8">
+
+    <!-- Main Content Card -->
+    <main class="max-w-[850px] w-full bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-stone-200 my-8">
+        
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row items-center md:items-stretch gap-8 p-8 md:p-10 bg-stone-50 border-b border-stone-200">
+            <!-- Ensure your image path matches exactly what you have in your repo -->
+            <img src="/assets/Profile_RG.jpg" alt="Portrait of Salahaddin Ebrahimipour" 
+                 style="margin-top: 26px;" 
+                 class="w-50 h-50 rounded-full object-cover shadow-md border-4 border-white self-center md:self-start shrink-0">
+            
+            <div class="flex flex-col justify-between flex-grow text-center md:text-left">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight mb-2">Salahaddin Ebrahimipour</h1>
+                    <h2 class="text-lg text-amber-700 font-semibold mb-2">PhD in Archaeology</h2>
+                    <p class="text-stone-600 text-sm sm:text-base max-w-md mx-auto md:mx-0">
+                        Digital & computational methods, Remote-sensing, GIS & photogrammetry
+                    </p>
+                </div>
+                
+                <!-- Social & Academic Links -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-4 mt-6 pt-6 border-t border-stone-200/70">
+                    
+                    <!-- Google Scholar -->
+                    <div class="group flex flex-col items-center gap-1.5 w-[72px]">
+                        <a href="https://scholar.google.com/citations?user=Tc_UvMoAAAAJ&hl=en" target="_blank"
+                           style="--brand: #4285f4;" class="social-link flex items-center justify-center w-11 h-11 rounded-full border border-stone-200">
+                            <i class="fas fa-graduation-cap text-lg"></i>
+                        </a>
+                        <span class="text-[11px] text-stone-500 font-medium transition-colors group-hover:text-stone-800 text-center leading-tight">Scholar</span>
+                    </div>
+
+                    <!-- ResearchGate -->
+                    <div class="group flex flex-col items-center gap-1.5 w-[72px]">
+                        <a href="https://www.researchgate.net/profile/Salahaddin-Ebrahimipour" target="_blank"
+                           style="--brand: #0cbda0;" class="social-link flex items-center justify-center w-11 h-11 rounded-full border border-stone-200">
+                            <i class="fab fa-researchgate text-xl"></i>
+                        </a>
+                        <span class="text-[11px] text-stone-500 font-medium transition-colors group-hover:text-stone-800 text-center leading-tight">ResearchGate</span>
+                    </div>
+                    
+                    <!-- Academia.edu -->
+                    <div class="group flex flex-col items-center gap-1.5 w-[72px]">
+                        <a href="https://oxford.academia.edu/SalahaddinEbrahimipour" target="_blank"
+                           style="--brand: #293134;" class="social-link flex items-center justify-center w-11 h-11 rounded-full border border-stone-200">
+                            <i class="fas fa-book-open text-lg"></i>
+                        </a>
+                        <span class="text-[11px] text-stone-500 font-medium transition-colors group-hover:text-stone-800 text-center leading-tight">Academia</span>
+                    </div>
+
+                    <!-- LinkedIn
+                    <div class="group flex flex-col items-center gap-1.5 w-[72px]">
+                        <a href="#" target="_blank"
+                           style="--brand: #0a66c2;" class="social-link flex items-center justify-center w-11 h-11 rounded-full border border-stone-200">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <span class="text-[11px] text-stone-500 font-medium transition-colors group-hover:text-stone-800 text-center leading-tight">LinkedIn</span>
+                    </div> -->
+
+                    <!-- Blog -->
+                    <div class="group flex flex-col items-center gap-1.5 w-[72px]">
+                        <a href="https://simplyacomment.blogspot.com" target="_blank"
+                           style="--brand: #f57d00;" class="social-link flex items-center justify-center w-11 h-11 rounded-full border border-stone-200">
+                            <i class="fab fa-blogger-b text-lg"></i>
+                        </a>
+                        <span class="text-[11px] text-stone-500 font-medium transition-colors group-hover:text-stone-800 text-center leading-tight">Blog</span>
+                    </div>
+
+                    <!-- CV - Opens Modal -->
+                    <div class="group flex flex-col items-center gap-1.5 w-[72px]">
+                        <a onclick="openModal()"
+                           style="--brand: #b45309;" class="social-link flex items-center justify-center w-11 h-11 rounded-full border border-stone-200">
+                            <i class="fas fa-file-alt text-lg"></i>
+                        </a>
+                        <span class="text-[11px] text-stone-500 font-medium transition-colors group-hover:text-stone-800 text-center leading-tight">CV</span>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Bio Section -->
+        <section class="p-8 md:p-10 leading-relaxed space-y-5 text-stone-700 bg-white">
+            <h3 class="text-xl font-bold text-stone-900 border-b-2 border-amber-200 inline-block pb-1 mb-2">A brief introduction</h3>
+            
+            <p>As an archaeologist specializing in Iranian archaeology, I have cultivated a robust academic foundation through my B.A. and M.A. studies. My current Ph.D. research integrates field evidence with innovative computational methods, including remote sensing and GIS analysis.</p>
+            
+            <p>My research focuses on the archaeological landscape of western and northwestern Iran, as well as northern Mesopotamia, spanning from the Early Bronze Age to the end of the first millennium BCE. I am particularly interested in exploring socio-ecological dynamics and human interactions within this region.</p>
+            
+            <p>My methodological approach combines traditional archaeological techniques with advanced digital tools. I employ statistical analysis, computational modeling, and GIS applications to gain deeper insights into ancient societies and their environments. This interdisciplinary approach allows me to contribute to the development of new archaeological methods while addressing fundamental questions about past human behaviors and cultural exchanges.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-stone-50 text-stone-400 text-sm text-center py-6">
+            <p> &copy; Made with ❤️ by Salahaddin Ebrahimipour since 2024</p>
+        </footer>
+
+    </main>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        
+        <!-- Modal Content -->
+        <div id="cvModalContent" class="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full mx-4 relative z-10 transform scale-95 transition-transform duration-300">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 transition-colors cursor-pointer">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            
+            <!-- Modal Body -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-lock text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-stone-900 mb-2">Curriculum Vitae</h3>
+                <p class="text-stone-600 mb-6">My full CV is available upon request. Please feel free to reach out via my social networks or professional profiles.</p>
+                
+                <button onclick="closeModal()" class="bg-amber-700 hover:bg-amber-800 text-white font-semibold py-2 px-6 rounded-lg transition-colors w-full shadow-md">
+                    Got it
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal Toggle -->
+    <script>
+        const modal = document.getElementById('cvModal');
+        const modalContent = document.getElementById('cvModalContent');
+
+        function openModal() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+        }
+    </script>
+</body>
+</html>

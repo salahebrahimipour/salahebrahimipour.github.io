@@ -1,0 +1,52 @@
+/* Topographic / Stratigraphy Background Pattern */
+body {
+    background-color: #e7e5e4;
+    background-image: 
+        repeating-radial-gradient(circle at 0% 0%, transparent 0, transparent 40px, rgba(168, 162, 158, 0.25) 40px, rgba(168, 162, 158, 0.25) 41px),
+        repeating-radial-gradient(circle at 100% 100%, transparent 0, transparent 40px, rgba(168, 162, 158, 0.25) 40px, rgba(168, 162, 158, 0.25) 41px);
+    background-attachment: fixed;
+}
+
+/* Stunning Custom Hover Animations */
+.social-link {
+    position: relative;
+    background-color: #f5f5f4; /* stone-100 */
+    color: var(--brand);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* The expanding colored circle background */
+.social-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: var(--brand);
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* The button lift and colored shadow */
+.social-link:hover {
+    color: #ffffff;
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 12px 20px -8px var(--brand);
+    border-color: var(--brand);
+}
+
+.social-link:hover::before {
+    transform: scale(1);
+}
+
+/* The icon bounce and tilt */
+.social-link i {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.social-link:hover i {
+    transform: scale(1.15) rotate(-8deg);
+}
