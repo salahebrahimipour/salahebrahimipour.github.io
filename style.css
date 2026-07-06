@@ -6,6 +6,9 @@ body {
         repeating-radial-gradient(circle at 100% 100%, transparent 0, transparent 40px, rgba(168, 162, 158, 0.25) 40px, rgba(168, 162, 158, 0.25) 41px);
     background-attachment: fixed;
 }
+.wl{
+    color: violet;
+}
 
 /* Stunning Custom Hover Animations */
 .social-link {
